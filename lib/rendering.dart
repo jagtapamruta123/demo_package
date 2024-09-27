@@ -8,11 +8,21 @@ class ColoredContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: color ?? Colors.blue,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: child,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: Colors.black,
+              width: 2,
+            ),
+            color: color ?? Colors.blue,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: child,
+          ),
         ),
       ),
     );
