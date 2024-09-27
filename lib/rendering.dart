@@ -18,7 +18,7 @@ class ColoredContainer extends StatelessWidget {
               color: Colors.black,
               width: 2,
             ),
-            color: color ?? Colors.blue,
+            color: color ?? Colors.yellow,
           ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
