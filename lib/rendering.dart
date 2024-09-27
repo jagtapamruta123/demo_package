@@ -13,11 +13,6 @@ class ColoredContainer extends StatelessWidget {
         child: Container(
           height: 100,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(
-              color: Colors.black,
-              width: 2,
-            ),
             color: color ?? Colors.yellow,
           ),
           child: Padding(
